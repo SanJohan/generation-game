@@ -3,3 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#quienesSomosTextoInformativo{
+   max-width: 600px;
+}
+#contenedor1{
+  display: flex;
+  justify-content: center;
+  align-items: center;     
+  flex-direction: column;
+  gap:30px;
+}
+
+#equipo {
+  text-align: left;
+}
