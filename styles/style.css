@@ -1,3 +1,15 @@
+/* Esta es la fuente local Share Tech */
+@font-face {
+    font-family: 'Share Tech';
+    src: url('../assets/fonts/ShareTech-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Esto aplica la fuente a todo el sitio */
+body {
+    font-family: 'Share Tech', sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
