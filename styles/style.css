@@ -37,8 +37,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  /* position: fixed;
-  top: 0; */
+  /* position: fixed; */
 }
 
 nav{
@@ -80,76 +79,100 @@ li{
   margin-top: 20px;
 }
 
-/* FOOTER */
-
-footer{
-  display: block;
-  height:fit-content;
+/* FOOTER PRINCIPAL */
+footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
   font-family: "Orbitron", sans-serif;
   margin-top: 10px;
   background-color: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
 }
 
-.top-footer{
+/* CONTENEDOR SUPERIOR */
+.top-footer {
   display: flex;
-
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .urls-footer {
   display: block;
-  width:fit-content;
+  flex: 1;
+  min-width: 150px;
 }
 
-.urls-footer a{
-  font-size: 10px;
-}
-
-
-.urls-footer li a{
-  font-size: 7px;
-}
-
-.members{
-    display: flex;
-    justify-content: center;
-    margin-left: 20px;
-}
-
-.members h1 {
-    text-align: center;
-    margin: 5px;
-    font-size: 10px;
-    font-weight: lighter;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-}
-
-.members .names li{
-    padding: 3px;
-    display: block;
-    list-style: none;
-    font-size: 8px;
-    margin-left: 0;
-    height:fit-content;
-}
-
-.members img{
-    margin-left: 20px;
-    align-content: center;
-    max-height: 70px;
-    padding: 1;
-}
-
-footer p{
-  margin-top: 15px;
-  font-family:'Times New Roman', Times, serif;
-  font-weight: lighter;
-  font-size: 8px;
-  text-align: center;
+.urls-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .urls-footer ul{
   display: block;
+  margin-top: 10px;
+}
+
+.urls-footer li {
+  margin-bottom: 8px;
+}
+
+.urls-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.urls-footer li a {
+  font-size: 9px;
+  opacity: 0.8;
+}
+
+.members {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.members h1 {
+  margin: 0;
+  font-size: 11px;
+  font-weight: lighter;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.members .names {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.members .names li {
+  padding: 3px 0;
+  font-size: 10px;
+  opacity: 0.9;
+}
+
+.members img {
+  max-height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+footer p {
+  margin: 20px 0 0 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-size: 10px;
+  text-align: center;
+  border-top: 1px solid #222;
+  padding-top: 15px;
+  width: 100%;
 }
