@@ -70,6 +70,16 @@ li{
   margin: 0 5px;
 }
 
+.btn-articulos{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 /* FOOTER */
 
 footer{
