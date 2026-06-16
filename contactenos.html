@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <title>Contactenos</title>
   <link rel="stylesheet" href="/styles/style.css">
 </head>
+
 <body>
+
   <div class="nav-bar-container">
     <nav>
       <a href="index.html">Generation Game</a>
@@ -23,46 +29,79 @@
       </ul>
     </nav>
   </div>
-  <div class="container">
-    <h1>Contactenos</h1>
-    <form action="/contactenos" method="POST">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
 
-      <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="6archivo " required></textarea>
+  <br>
+  
+  <div class="container text-center" style="min-height: 85vh;">
+    <div class="row">
+      <div class="col">
+        <h1>Contactenos</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-grid text-start">
+        <form action="/contactenos" method="POST">
+          <label for="nombre" class="d-block mb-1">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required class="form-control" placeholder="nombre completo">
 
-      <button type="submit">Enviar</button>
-    </form>
+          <label for="email" class="d-block mb-1">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required class="form-control" placeholder="ejemplo@email.com">
+        </form>
+      </div>
+      <div class="col d-grid text-start">
+        <form action="/contactenos" method="POST">
+          <textarea id="mensaje" name="mensaje" rows="6" required class="w-100 " placeholder="Ingrese su mensaje aqui"></textarea>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form action="/contactenos" method="POST" class="d-grid">
+          <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
+
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+
+        <div class="contact-info">
+          <h2>Conecta conmigo</h2>
+          <ul>
+            <li><a href="#">jugador1.contacto@juegos-generacion.com</a></li>
+            <li><a href="#">+57 321 456 7890</a></li>
+            <li><a href="#">Redes Sociales</a></li>
+          </ul>
+        </div>
+
+        <div class="pqr">
+          <h2>Preguntas Frecuentes</h2>
+          <ul>
+            <li><a href="#">¿Qué tipos de juegos ofrecen?</a></li>
+            <li><a href="#">¿Qué tipo de plataformas tienen?</a></li>
+            <li><a href="#">¿Qué métodos de pago aceptan?</a></li>
+          </ul>
+        </div>
+
+        <h3>Horario de atención</h3>
+        <p>Lunes a viernes: 9:00 AM - 6:00 PM</p>
+        <p>Sábados: 10:00 AM - 4:00 PM</p>
+
+      </div>
+      <div class="col">
+        <div class="map">
+          <h2> Estamos aquí</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1234567890123!2d-74.12345678901234!3d4.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e1234567890123%3A0x1234567890123456!2sUbicación%20de%20la%20Empresa!5e0!3m2!1ses-419!2sco!4v1612345678901"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="contact-info">
-    <h2>Conecta conmigo</h2>
-    <ul>
-      <li><a href="jugador1.contacto@juegos-generacion.com">jugador1.contacto@juegos-generacion.com</a></li>
-      <li><a href="tel:+573214567890">+57 321 456 7890</a></li>
-      <li><a href="redes-sociales">Redes Sociales</a></li>
-    </ul>
-  </div>
-
-  <div class="map">
-    <h2> Estamos aquí</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1234567890123!2d-74.12345678901234!3d4.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e1234567890123%3A0x1234567890123456!2sUbicación%20de%20la%20Empresa!5e0!3m2!1ses-419!2sco!4v1612345678901" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    <h3>Horario de atención</h3>
-    <p>Lunes a viernes: 9:00 AM - 6:00 PM</p>
-    <p>Sábados: 10:00 AM - 4:00 PM</p>
-  </div>
-
-  <div class="pqr">
-    <h2>Preguntas Frecuentes</h2>
-    <ul>
-      <li><a href="/pqr#juegos">¿Qué tipos de juegos ofrecen?</a></li>
-      <li><a href="/pqr#plataformas">¿Qué tipo de plataformas tienen?</a></li>
-      <li><a href="/pqr#pagos">¿Qué métodos de pago aceptan?</a></li>
-    </ul>
-  </div>
+  <br>
+  
   <footer>
     <div class="top-footer">
       <div class="urls-footer">
@@ -96,4 +135,5 @@
 
 
 </body>
+
 </html>
