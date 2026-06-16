@@ -10,6 +10,7 @@
 body {
     font-family: 'Share Tech', sans-serif;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -177,6 +178,7 @@ footer p {
   padding-top: 15px;
   width: 100%;
 }
+
 
 .urls-footer ul{
   display: block;
