@@ -14,6 +14,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  align-items: center;
 }
 
 #quienesSomosTextoInformativo{
@@ -175,4 +176,12 @@ footer p {
   border-top: 1px solid #222;
   padding-top: 15px;
   width: 100%;
+}
+
+.urls-footer ul{
+  display: block;
+}
+
+#quienesSomosTextoInformativo {
+    text-align: justify;
 }
