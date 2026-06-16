@@ -1,15 +1,16 @@
 /* Esta es la fuente local Share Tech */
 @font-face {
-    font-family: 'Share Tech';
-    src: url('../assets/fonts/ShareTech-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Share Tech';
+  src: url('../assets/fonts/ShareTech-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Esto aplica la fuente a todo el sitio */
 body {
-    font-family: 'Share Tech', sans-serif;
+  font-family: 'Share Tech', sans-serif;
 }
+
 
 * {
   margin: 0;
@@ -18,15 +19,25 @@ body {
   align-items: center;
 }
 
-#quienesSomosTextoInformativo{
-   max-width: 600px;
+ul {
+  list-style: none;
 }
-#contenedor1{
+
+a{
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+#quienesSomosTextoInformativo {
+  max-width: 600px;
+}
+
+#contenedor1 {
   display: flex;
   justify-content: center;
-  align-items: center;     
+  align-items: center;
   flex-direction: column;
-  gap:30px;
+  gap: 30px;
 }
 
 #equipo {
@@ -35,14 +46,14 @@ body {
 
 /* NAV BAR */
 
-.nav-bar-container{
+.nav-bar-container {
   display: flex;
   justify-content: center;
   width: 100%;
   /* position: fixed; */
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,23 +66,31 @@ nav{
   border-radius: 20px;
 }
 
-a{
+.nav-bar-container a {
   font-family: "Orbitron", sans-serif;
   text-decoration: none;
   color: white;
 }
 
-ul{
+.nav-bar-container ul {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
-li{
+
+.nav-bar-container li {
   font-size: 10px;
   list-style: none;
-  margin: 0 5px;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn-articulos{
+
+.btn-articulos {
   display: inline-block;
   padding: 10px 20px;
   background-color: black;
@@ -97,6 +116,7 @@ footer {
 /* CONTENEDOR SUPERIOR */
 .top-footer {
   display: flex;
+  min-width: 95%;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -115,7 +135,7 @@ footer {
   margin: 0;
 }
 
-.urls-footer ul{
+.urls-footer ul {
   display: block;
   margin-top: 10px;
 }
@@ -170,20 +190,20 @@ footer {
 
 footer p {
   margin: 20px 0 0 0;
+  width: 100%;
   font-family: 'Times New Roman', Times, serif;
   font-weight: lighter;
   font-size: 10px;
   text-align: center;
   border-top: 1px solid #222;
   padding-top: 15px;
-  width: 100%;
 }
 
-
-.urls-footer ul{
+.urls-footer ul {
   display: block;
+  padding: 0;
 }
 
 #quienesSomosTextoInformativo {
-    text-align: justify;
+  text-align: justify;
 }
